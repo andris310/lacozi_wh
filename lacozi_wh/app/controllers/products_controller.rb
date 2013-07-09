@@ -15,6 +15,14 @@ class ProductsController < ApplicationController
     end
   end
 
+  def decorative_pillows
+
+  end
+
+  def duvet_sets
+
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show
