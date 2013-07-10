@@ -27,10 +27,25 @@
     <%= f.label :code %><br />
     <%= f.text_field :code %>
   </div>
+
   <div class="field">
-    <%= f.label :category %><br />
-    <%= f.text_field :category %>
+    <% if !params[:category_id].nil? %>
+    <input type='hidden' name='product[category_id]'
+      value='<%= params[:category_id] %>'/>
+    <% else %>
+    <%= f.label :category_id %><br />
+    <select name='product[category_id]' >
+      <%= @categories.each do |cat| %>
+        <option value='<% cat.id %>'>
+          <%= cat.name %>
+        </option>
+      <% end %>
+    </select>
+    <% end %>
   </div>
+  <%= params.inspect %>
+  <%= params[:category_id].inspect %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
