@@ -1,0 +1,23 @@
+$Roboto: 'Roboto', sans-serif;
+
+body {
+  font-family: $Roboto;
+  font-weight: 300;
+}
+
+//////  Product Show Page ////////
+
+#p-container {
+  border: 1px solid #dfdfdf;
+  overflow: auto;
+}
+
+h1 {
+  font-family: $Roboto;
+  font-size: 1.6em;
+}
+
+#p-image {
+  float: left;
+  padding: .5em;
+}
