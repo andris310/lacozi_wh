@@ -39,7 +39,10 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
 
-    @categories = Category.all
+    @options = Category.all.collect do |c|
+        [c.name, c.id]
+      end
+    # @categories = Category.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -50,7 +53,11 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
     @product = Product.find(params[:id])
-    @categories = Category.all
+
+    @options = Category.all.collect do |c|
+        [c.name, c.id]
+      end
+    # @categories = Category.all
   end
 
   # POST /products
