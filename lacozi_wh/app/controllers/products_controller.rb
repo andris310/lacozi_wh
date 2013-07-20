@@ -16,11 +16,19 @@ class ProductsController < ApplicationController
   end
 
   def decorative_pillows
-
+    @pillows = Product.where(:category => 'decorative pillow')
+    respond_to do |format|
+      format.html
+      format.json { render json: @pillows }
+    end
   end
 
   def duvet_sets
-
+    @duvet_sets = Product.where(:category => 'duvet set')
+    respond_to do |format|
+      format.html
+      format.json { render json: @duvet_sets }
+    end
   end
 
   # GET /products/1
