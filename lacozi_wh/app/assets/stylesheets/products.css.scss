@@ -15,7 +15,9 @@ body {
 
 h1#logo {
   width: 300px;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 26px;
+  font-size: 5em;
+  font-weight: 200;
 }
 
 #main-menu {
@@ -57,4 +59,21 @@ h1 {
 #p-image {
   float: left;
   padding: .5em;
+}
+
+///// SWIPE STYLES //////
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
 }
