@@ -72,7 +72,12 @@ h1 {
 
 ///// PRODUCT DISPLAY PAGE //////
 
-.item-list, #top-menu {
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+#top-menu {
   list-style: none;
   padding: 0;
   & li {
@@ -88,6 +93,13 @@ h1 {
   a {
 
   }
+}
+
+.list {
+  width: 155px;
+  height: 90%;
+  float: right;
+  margin-top: -100px;
 }
 
 ///// SWIPE STYLES //////
