@@ -8,6 +8,7 @@ $(document).ready ->
       $(results).each (index, result) ->
         list.append "<li><img src='" + result["picture"]["thumb"]["url"] + "'></li>"
 
+
 # $(document).ready(function() {
 #   $.ajax({
 #     url: '/decorative-pillows.json',
