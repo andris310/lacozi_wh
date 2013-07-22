@@ -77,7 +77,15 @@ h1 {
   padding: 0;
 }
 
-#top-menu {
+#bottom-menu-div {
+  width: 400px;
+  float: right;
+  bottom: -650px;
+  right: -100px;
+  position: relative;
+}
+
+#bottom-menu {
   list-style: none;
   padding: 0;
   & li {
@@ -85,7 +93,9 @@ h1 {
   }
 }
 
-#top-menu {
+#bottom-menu {
+  position: absolute;
+  bottom: 0;
   a li {
     padding: 5px;
     font-size: 1.5em;
@@ -96,10 +106,11 @@ h1 {
 }
 
 .list {
-  width: 155px;
+  width: 150px;
   height: 90%;
   float: right;
-  margin-top: -100px;
+  margin-top: -70px;
+  margin-right: 12px;
 }
 
 ///// SWIPE STYLES //////
