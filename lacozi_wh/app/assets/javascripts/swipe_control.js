@@ -1,6 +1,6 @@
 $(document).ready(function() {
   window.mySwipe = Swipe(document.getElementById('slider'), {
-    startSlide: 2,
+    startSlide: 0,
     speed: 600,
     auto: 3000,
     continuous: true,
