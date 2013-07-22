@@ -4,7 +4,7 @@ $(document).ready ->
     type: "get"
     dataType: "json"
     success: (results) ->
-      list = $("#d-pillow-list")
+      list = $(".item-list")
       $(results).each (index, result) ->
         list.append "<li><img src='" + result["picture"]["thumb"]["url"] + "'></li>"
 
