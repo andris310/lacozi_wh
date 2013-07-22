@@ -1,5 +1,6 @@
 $Roboto: 'Roboto', sans-serif;
 $Blue: #418DFF;
+$Gray: #DADADA;
 
 body {
   font-family: $Roboto;
@@ -18,7 +19,7 @@ a {
 
 #container {
   width: 1024px;
-  height: 768px;
+  height: 730px;
   border: 1px solid #EBEBEB;
 }
 
@@ -44,7 +45,7 @@ ul#main-menu-list {
   color: #FFF;
   font-size: 1.8em;
   padding: 26px;
-  background-color: #DADADA;
+  background-color: $Gray;
   margin-bottom: 5px;
 }
 
@@ -79,10 +80,10 @@ h1 {
 }
 
 #bottom-menu-div {
-  width: 400px;
+  width: 450px;
   height: 50px;
   float: right;
-  bottom: -530px;
+  bottom: -500px;
   right: -100px;
   position: relative;
 }
@@ -92,6 +93,8 @@ h1 {
   padding: 0;
   & li {
     display: inline;
+    background-color: $Gray;
+    color: #FFF;
   }
 }
 
@@ -99,11 +102,10 @@ h1 {
   position: absolute;
   bottom: 0;
   a li {
-    padding: 5px;
-    font-size: 1.5em;
-  }
-  a {
-
+    padding: 6px 15px;
+    font-size: 1.7em;
+    font-family: 'roboto';
+    font-weight: 200;
   }
 }
 
