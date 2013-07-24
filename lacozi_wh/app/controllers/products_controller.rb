@@ -31,6 +31,14 @@ class ProductsController < ApplicationController
     end
   end
 
+  def details
+    @details = Product.where(:id => params[:id])
+    respond_to do |format|
+      format.html
+      format.json { render json: @details}
+    end
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show
