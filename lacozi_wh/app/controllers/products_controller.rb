@@ -32,7 +32,7 @@ class ProductsController < ApplicationController
   end
 
   def details
-    @details = Product.where(:id => params[:id])
+    @details = Product.where(:id => params[:q])
     respond_to do |format|
       format.html
       format.json { render json: @details}
