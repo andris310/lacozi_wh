@@ -16,10 +16,11 @@ $(document).ready ->
   $('#duvet-sets').load(getItems('/duvet-sets.json', '#duvet-sets'))
 
 
-  $('.list').on('click', 'li' ->
+  $('.list').on('click', 'li', ->
     item_id = $(this).attr('item_id')
     $.ajax
-      url: '/item-details'
+      url: '/product-details'
+      data: q: item_id
       type: 'get'
       dataType: 'json'
       success: ->
