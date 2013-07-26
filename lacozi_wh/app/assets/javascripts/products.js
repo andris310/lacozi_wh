@@ -19,7 +19,7 @@ function getItems(link, cssid) {
       var list = $(cssid);
       $(results).each (function(index, result) {
         var item = $("<li><img src='" + result["picture"]["thumb"]["url"] + "'></li>");
-        list.append(item);
+        list.append(item.fadeIn(500));
         item.attr('item_id', result["id"]);
       });
     }
@@ -66,9 +66,9 @@ $(document).ready(function() {
       data: { q: itemId },
       dataType: 'json',
       success: function(result) {
-        info.append($('<h2>' + result[0]['name'] + '</h2>'));
-        info.append($('<div class="pic"><img src=' + result[0]['picture']['url'] + '></div>'));
-        info.append($('<div class="description"><p>' + result[0]['description'] + '</p></div>'));
+        info.append($('<h2>' + result[0]['name'] + '</h2>').fadeIn(500));
+        info.append($('<div class="pic"><img src=' + result[0]['picture']['url'] + '></div>').fadeIn(500));
+        info.append($('<div class="description"><p>' + result[0]['description'] + '</p></div>').fadeIn(500));
       }
     });
   });
