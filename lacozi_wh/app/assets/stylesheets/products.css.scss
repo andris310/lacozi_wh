@@ -103,13 +103,20 @@ h1 {
   }
 }
 
-.pic, .pic img {
+.pic{
   height: 450px;
   width: 450px;
+  float: left;
+   img {
+    height: 450px;
+    width: 450px;
+    margin-left: 10px;
+  }
 }
 
-.pic img {
-  margin-left: 10px;
+.description {
+  float: right;
+  width: 320px;
 }
 
 #bottom-menu-div {
