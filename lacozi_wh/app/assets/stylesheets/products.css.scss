@@ -108,6 +108,10 @@ h1 {
   width: 450px;
 }
 
+.pic img {
+  margin-left: 10px;
+}
+
 #bottom-menu-div {
   width: 450px;
   height: 50px;
@@ -137,7 +141,8 @@ h1 {
 }
 
 .list {
-  margin-top: -110px;
+  margin-top: -100px;
+  overflow: scroll;
   width: 150px;
   height: 90%;
   float: right;
