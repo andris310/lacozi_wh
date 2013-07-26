@@ -66,9 +66,7 @@ $(document).ready(function() {
       data: { q: itemId },
       dataType: 'json',
       success: function(result) {
-        info.append('some text here');
-        console.log(result)
-
+        info.append($('<h2>' + result[0]['name'] + '</h2>'));
       }
     })
   });
