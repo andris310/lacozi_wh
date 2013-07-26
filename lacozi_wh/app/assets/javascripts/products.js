@@ -67,6 +67,7 @@ $(document).ready(function() {
       dataType: 'json',
       success: function(result) {
         info.append($('<h2>' + result[0]['name'] + '</h2>'));
+        info.append($('<div class="pic"><img src=' + result[0]['picture']['url'] + '></div>'))
       }
     })
   });

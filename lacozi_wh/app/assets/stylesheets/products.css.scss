@@ -18,6 +18,7 @@ a {
 ////// Front Page /////////
 
 #container {
+  position:absolute;
   width: 1024px;
   height: 730px;
   border: 1px solid #EBEBEB;
@@ -87,13 +88,21 @@ h1 {
   padding: 0;
 }
 
+#product-data {
+  float: left;
+  width: 800px;
+}
+
+.pic img {
+  height: 400px;
+  width: 400px;
+}
+
 #bottom-menu-div {
   width: 450px;
   height: 50px;
+  clear: both;
   float: right;
-  bottom: -570px;
-  right: -100px;
-  position: relative;
 }
 
 #bottom-menu {
@@ -118,6 +127,7 @@ h1 {
 }
 
 .list {
+  margin-top: -110px;
   width: 150px;
   height: 90%;
   float: right;
