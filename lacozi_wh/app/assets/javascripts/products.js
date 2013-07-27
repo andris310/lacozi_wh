@@ -26,6 +26,22 @@ function getItems(link, cssid) {
   });
 }
 
+function getItemDetails(itemId) {
+  var info = $('#product-data');
+  info.html('');
+  $.ajax({
+    url: '/product-details.json',
+    data: { q: itemId },
+    dataType: 'json',
+    success: function(result) {
+      var r = result[0];
+      info.append($('<h2>' + r['name'] + '</h2>').fadeIn(500));
+      info.append($('<div class="pic"><img src=' + r['picture']['url'] + '></div>').fadeIn(500));
+      info.append($('<div class="description"><p>' + r['description'] + '</p></div>').fadeIn(500));
+    }
+  });
+}
+
 
 // $(document).ready ->
 //   $('#dec-pillows').load(getItems('/decorative-pillows.json', '#dec-pillows'))
@@ -51,25 +67,19 @@ function getItems(link, cssid) {
 
 
 $(document).ready(function() {
-  $('#dec-pillows').load(getItems('/decorative-pillows.json', '#dec-pillows'));
+  $('#dec-pillows').load(
+    getItems('/decorative-pillows.json', '#dec-pillows');
+
+    );
+
   $('#duvet-sets').load(getItems('/duvet-sets.json', '#duvet-sets'));
 
 
   $('.list').on('click', 'li', function() {
-    var info = $('#product-data');
     var li = $(this);
     var itemId = li.attr('item_id');
-    info.html('');
-
-    $.ajax({
-      url: '/product-details.json',
-      data: { q: itemId },
-      dataType: 'json',
-      success: function(result) {
-        info.append($('<h2>' + result[0]['name'] + '</h2>').fadeIn(500));
-        info.append($('<div class="pic"><img src=' + result[0]['picture']['url'] + '></div>').fadeIn(500));
-        info.append($('<div class="description"><p>' + result[0]['description'] + '</p></div>').fadeIn(500));
-      }
-    });
+    getItemDetails(itemId);
   });
+
+
  });
