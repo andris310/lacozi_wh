@@ -91,9 +91,17 @@ h1 {
 
 ///// PRODUCT DISPLAY PAGE //////
 
+
 .item-list {
   list-style: none;
   padding: 0;
+}
+
+.grid {
+  li {
+    float: left;
+    padding: 20px;
+  }
 }
 
 #product-data {
@@ -158,9 +166,7 @@ h1 {
 .list {
   margin-top: -100px;
   overflow: scroll;
-  width: 150px;
-  height: 90%;
-  float: right;
+  height: 75%;
   margin-right: 12px;
 }
 
