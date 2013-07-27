@@ -23,6 +23,7 @@ class ProductsController < ApplicationController
     end
   end
 
+
   def duvet_sets
     @duvet_sets = Product.where(:category => 'duvet set')
     respond_to do |format|

@@ -12,7 +12,6 @@ LacoziWh::Application.routes.draw do
   get '/decorative-pillows', :to => 'products#decorative_pillows'
   get '/duvet-sets', :to => 'products#duvet_sets'
   get '/product-details', :to => 'products#details'
-  get '/pillow-index', :to => 'products#pillow_index'
 
 
 end
