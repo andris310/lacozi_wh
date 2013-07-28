@@ -106,7 +106,7 @@ h1 {
 
 #product-data {
   float: left;
-  width: 800px;
+  width: 845px;
 }
 
 #product-data {
@@ -132,7 +132,11 @@ h1 {
 
 .description {
   float: right;
-  width: 320px;
+  width: 360px;
+  p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
 }
 
 #bottom-menu-div {
