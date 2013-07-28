@@ -47,8 +47,6 @@ function getItems(link, cssid) {
         list.append(item.fadeIn(500));
         item.attr('item_id', result["id"]);
       });
-      // var firstItemId = $('.item-list li:first-child').attr('item_id');
-      // getItemDetails(firstItemId);
     }
   });
 }
@@ -72,17 +70,16 @@ function getItemDetails(itemId) {
 
 $(document).ready(function() {
   $('#dec-pillows').load(getItems('/decorative-pillows.json', '#dec-pillows'));
-
   $('#duvet-sets').load(getItems('/duvet-sets.json', '#duvet-sets'));
 
-
-
   $('.list').on('click', 'li', function() {
-    $('.list').css({
+    var list = $('.list');
+    list.css({
         'width': '150px',
         'float': 'right',
         'height': '90%'
     });
+
     $('.item-list').removeClass('grid');
     var li = $(this);
     var itemId = li.attr('item_id');
