@@ -8,15 +8,15 @@ gem 'rails', '3.2.13'
 gem 'carrierwave'
 gem 'rmagick'
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   gem 'pry'
   gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
-end
-
-group :production do
-  gem 'pg'
 end
 
 
