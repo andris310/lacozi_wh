@@ -75,10 +75,11 @@ $(document).ready(function() {
   $('.list').on('click', 'li', function() {
     var list = $('.list');
     list.css({
-        'width': '150px',
+        'width': '154px',
         'float': 'right',
         'height': '90%'
     });
+
 
     $('.item-list').removeClass('grid');
     var li = $(this);
