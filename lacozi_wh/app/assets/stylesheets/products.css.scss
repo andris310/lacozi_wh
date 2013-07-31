@@ -106,10 +106,6 @@ h1 {
   }
 }
 
-.list ul {
-  padding: 0;
-}
-
 #product-data {
   float: left;
   width: 845px;
@@ -178,6 +174,10 @@ h1 {
   overflow: scroll;
   height: 75%;
   margin-right: 12px;
+  ul {
+    padding: 0;
+    width: 150px;
+  }
 }
 
 ///// SWIPE STYLES //////
