@@ -58,15 +58,17 @@ h1.category {
 ul#main-menu-list {
   list-style: none;
   padding: 0;
+  li {
+    color: #FFF;
+    font-size: 1.8em;
+    font-family: $Roboto;
+    font-weight: 300;
+    padding: 26px;
+    background-color: $Gray;
+    margin-bottom: 5px;
+  }
 }
 
-#main-menu-list li {
-  color: #FFF;
-  font-size: 1.8em;
-  padding: 26px;
-  background-color: $Gray;
-  margin-bottom: 5px;
-}
 
 #slider {
   width: 960px;
@@ -107,8 +109,10 @@ h1 {
 }
 
 #product-data {
+  margin-left: 10px;
+  // border-top: 1px solid #E9E9E9;
   float: left;
-  width: 845px;
+  width: 839px;
 }
 
 #product-data {
@@ -142,7 +146,7 @@ h1 {
 }
 
 #bottom-menu-div {
-  width: 450px;
+  width: 480px;
   height: 50px;
   clear: both;
   float: right;
